@@ -3,8 +3,12 @@
     <title>Advanced React Application Example</title>
   </head>
 
+  <script type="text/javascript">
+    window.initialData = <%- JSON.stringify(initialData) -%>;
+  </script>
+
   <body>
-    <div id="root"><%- initialContent %></div>
+    <div id="root"><%- initialMarkup %></div>
 
     <script type="text/javascript" src="/bundle.js"></script>
   </body>
